@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    <title>Nabeel Khan SMIT-140544</title>
+</head>
+<body>
+
+
+    <div class="calculator">
+
+        <table>
+            <tr>
+                <input type="text" name="" id="input" disabled>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="clearResult()">C</button></td>
+                <td><button onclick="deleteChar()"><i class="fas fa-backspace"></i></button></td>
+                <td><button onclick="getOperator('%')">%</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getNumber('7')">7</button></td>
+                <td><button onclick="getNumber('8')">8</button></td>
+                <td><button onclick="getNumber('9')">9</button></td>
+                <td><button onclick="getOperator('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getNumber('4')">4</button></td>
+                <td><button onclick="getNumber('5')">5</button></td>
+                <td><button onclick="getNumber('6')">6</button></td>
+                <td><button onclick="getOperator('/')">/</button></td>
+                
+            </tr>
+            <tr>
+                <td><button onclick="getNumber('1')">1</button></td>
+                <td><button onclick="getNumber('2')">2</button></td>
+                <td><button onclick="getNumber('3')">3</button></td>
+                <td><button onclick="getOperator('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="getNumber('0')">0</button></td>
+                <td><button onclick="getNumber('.')">.</button></td>
+                <td><button  onclick="result()">=</button></td>
+                <td><button onclick="getOperator('+')">+</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
